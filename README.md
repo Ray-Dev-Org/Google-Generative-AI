@@ -14,7 +14,9 @@ To set up the project, run the following commands to install all required depend
 
 ```bash
 pip install virtualenv
+
 virtualenv env
+
 env\Scripts\activate
 ```
 
