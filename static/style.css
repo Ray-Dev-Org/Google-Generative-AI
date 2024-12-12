@@ -1,4 +1,6 @@
-/* Variables */
+/* ===========
+Variables 
+============*/
 :root {
   --bg-primary: #1a1b1e;
   --bg-secondary: #25262b;
@@ -10,7 +12,9 @@
   --border-color: #2e2f33;
 }
 
-/* Scroll bar */
+/* ===========
+Scroll bar 
+============*/
 ::-webkit-scrollbar {
   width: 7px;
 }
@@ -28,7 +32,9 @@
   background-color: var(--accent-primary);
 }
 
-/* Layout */
+/* ===========
+Layout 
+=========== */
 * {
   margin: 0;
   padding: 0;
@@ -49,7 +55,9 @@ body {
   overflow: hidden;
 }
 
-/* Sidebar */
+/* ===========
+Sidebar  
+ ========== */
 .sidebar {
   background-color: var(--bg-secondary);
   border-right: 1px solid var(--border-color);
@@ -96,7 +104,9 @@ body {
   background-color: var(--accent-secondary);
 }
 
-/* History */
+/* ======== 
+History  
+======== */
 .history-items {
   display: flex;
   flex-direction: column;
@@ -149,7 +159,9 @@ body {
   color: var(--text-primary);
 }
 
-/* Main Content */
+/*  ===========
+Main Content  
+============= */
 .main-content {
   display: flex;
   flex-direction: column;
@@ -168,7 +180,9 @@ body {
   flex: 1;
 }
 
-/* Chat Messages */
+/* ============
+Chat Messages 
+=============*/
 .chat-container {
   flex: 1;
   padding: 1rem;
@@ -249,7 +263,9 @@ body {
   background-color: var(--accent-secondary);
 }
 
-/* RWD */
+/* =======
+  RWD 
+ ====== */
 @media (max-width: 1200px) {
   .app-container {
     grid-template-columns: 250px 1fr;
