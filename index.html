@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Chatbot</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="chat-container">
+      <div class="chat-header">AI Chatbot</div>
+      <div class="chat-messages" id="chatMessages"></div>
+      <div class="chat-input">
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Type your message here..."
+        />
+        <button id="sendButton">Send</button>
+      </div>
+    </div>
+
+    <script>
+      const chatMessages = document.getElementById("chatMessages");
+      const userInput = document.getElementById("userInput");
+      const sendButton = document.getElementById("sendButton");
+
+      async function sendMessage() {
+        const message = userInput.value.trim();
+        if (!message) return;
+
+        const userMessage = document.createElement("div");
+        userMessage.classList.add("chat-message", "user");
+        userMessage.textContent = message;
+        chatMessages.appendChild(userMessage);
+
+        userInput.value = "";
+
+        try {
+          const response = await fetch(
+            "http://localhost:5000/generate-content",
+            {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ message }),
+            }
+          );
+
+          const data = await response.json();
+
+          const botMessage = document.createElement("div");
+          botMessage.classList.add("chat-message", "bot");
+          botMessage.textContent =
+            data.response || "Error: No response from server.";
+          chatMessages.appendChild(botMessage);
+        } catch (error) {
+          console.error("Error:", error);
+        }
+
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }
+
+      sendButton.addEventListener("click", sendMessage);
+      userInput.addEventListener("keypress", (e) => {
+        if (e.key === "Enter") sendMessage();
+      });
+    </script>
+  </body>
+</html>
