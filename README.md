@@ -4,11 +4,7 @@
 
 ## Tech Stack:
 
-HTML, CSS, JavaScript, Python
-
-Tailwind CSS
-
-Flask
+HTML, CSS, JavaScript, Python, Flask
 
 # Install Project Dependencies
 
@@ -20,11 +16,15 @@ To set up the project, run the following commands to install all required depend
 pip install flask flask-cors google-generativeai python-dotenv virtualenv
 ```
 
-### Run the API
+### Run Application
 
 ```bash
 env\Scripts\activate
 python app.py
 ```
 
-### Design Reference
+### Open in Browser
+
+```bash
+http://localhost:5000/
+```
