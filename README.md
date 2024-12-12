@@ -10,16 +10,18 @@ HTML, CSS, JavaScript, Python, Flask
 
 To set up the project, run the following commands to install all required dependencies.
 
-### Activate Environment
+### Install & Activate Flask Environment
 
 ```bash
+pip install virtualenv
+virtualenv env
 env\Scripts\activate
 ```
 
-### Install Dependencies
+### Install Dependencies Inside the Environment
 
 ```bash
-pip install flask flask-cors google-generativeai python-dotenv virtualenv
+pip install flask flask-cors google-generativeai python-dotenv
 ```
 
 ### Run Application
