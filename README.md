@@ -38,5 +38,7 @@ python app.py
 http://localhost:5000/
 ```
 
+### Preview
+
 ![Screenshot 2024-12-12 233411](https://github.com/user-attachments/assets/d9b18948-c00b-4eba-9844-5f32599bb1ae)
 
