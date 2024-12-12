@@ -4,7 +4,7 @@
 
 ## Tech Stack:
 
-HTML, CSS, JavaScript, Python, Flask, Google-Generative AI
+Google-Generative AI, Python, Flask, HTML, CSS, JavaScript
 
 # Install Project Dependencies
 
