@@ -10,6 +10,12 @@ HTML, CSS, JavaScript, Python, Flask
 
 To set up the project, run the following commands to install all required dependencies.
 
+### Activate Environment
+
+```bash
+env\Scripts\activate
+```
+
 ### Install Dependencies
 
 ```bash
