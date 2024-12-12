@@ -1,6 +1,6 @@
 # AI Chatbot
 
-**This AI chatbot only answer topics about information assurance and security**
+**This AI chatbot is crafted to efficiently handle various tasks, delivering smart and effective responses to user queries. Developed using Python and Flask.**
 
 ## Tech Stack:
 
@@ -37,3 +37,6 @@ python app.py
 ```bash
 http://localhost:5000/
 ```
+
+![Screenshot 2024-12-12 233411](https://github.com/user-attachments/assets/d9b18948-c00b-4eba-9844-5f32599bb1ae)
+
