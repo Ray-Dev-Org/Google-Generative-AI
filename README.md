@@ -29,6 +29,8 @@ pip install flask flask-cors google-generativeai python-dotenv
 ### Run Application
 
 ```bash
+env\Scripts\activate
+
 python app.py
 ```
 
