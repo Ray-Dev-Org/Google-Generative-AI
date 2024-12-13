@@ -3,6 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="{{ url_for('static', filename='logo.svg') }}"
+    />
     <title>AI Chatbot</title>
     <link
       rel="stylesheet"
@@ -62,7 +67,12 @@
         </div>
 
         <footer class="chat-input">
-          <input type="text" id="userInput" placeholder="Start typing" />
+          <input
+            type="text"
+            id="userInput"
+            autocomplete="off"
+            placeholder="Start typing"
+          />
           <button id="sendButton">Send</button>
         </footer>
       </main>

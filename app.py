@@ -7,6 +7,7 @@ import google.generativeai as genai
 load_dotenv()
 
 app = Flask(__name__)
+
 CORS(app)
 
 API_KEY = os.getenv("API_KEY")
